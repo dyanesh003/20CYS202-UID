@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dyanesh S | Personal Website</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Exo:wght@800&family=Josefin+Sans:wght@300&family=Nunito:wght@300&display=swap");
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+      * {
+        margin: 10px;
+        padding: 0px;
+        box-sizing: border-box;
+        color: black;
+      }
+
+      .body-text {
+        display: flex;
+        font-family: "Montserrat", sans-serif;
+        color: black;
+        align-items: center;
+        justify-content: center;
+        margin-top: 250px;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 8vh;
+      }
+
+      .nav-links {
+        display: flex;
+        justify-content: space-around;
+        width: 30%;
+      }
+
+      .nav-links li {
+        list-style: none;
+      }
+
+      .nav-links a {
+        color: black;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        text-decoration: none;
+        letter-spacing: 2px;
+        /* font-weight: bold; */
+        font-size: 16px;
+        padding: 14px 16px;
+      }
+
+      .nav-links a:hover:not(.active) {
+        background-color: lightseagreen;
+        text-decoration: dashed;
+      }
+
+      .nav-links li a.active {
+        background-color: #4caf50;
+      }
+
+      .adjust1 {
+        font-family: "Josefin Sans", sans-serif;
+        margin-left: 11%;
+      }
+
+      .adjust2 {
+        position: absolute;
+        top: 20%;
+        left: 45%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 150%;
+        font-weight: 500;
+        letter-spacing: 2px;
+      }
+
+      .vertical {
+        border-left: 6px solid black;
+        height: 75%;
+        position: absolute;
+        left: 40%;
+      }
+
+      .icons {
+        width: 3%;
+      }
+
+      .about_div {
+        margin: 8%;
+        padding-top: 4%;
+        position: absolute;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 150%;
+        line-height: 1cm;
+      }
+
+      .footer {
+        background-color: #000;
+        font-family: 'Monserrat', sans-serif;
+        font-size: 15px;
+        text-align: center;
+        margin-left: -10.9%;
+        margin-right: -9.6%;
+      }
+    </style>
+  </head>
+  <body style="background-color: #dfdfdf;">
+    <nav>
+      <ul class="nav-links">
+        <li>
+          <a class="active" href="index.html">Home</a>
+        </li>
+        <li style="padding-left: 250%;">
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="MyResume.pdf" target="_blank">Resume</a>
+        </li>
+      </ul>
+    </nav>
+    <br>
+    <br>
+    <br />
+    <div class="vertical"></div>
+    <div class="adjust1">
+      <br />
+      <br />
+      <p style="font-family: 'Josefin Sans', sans-serif; font-size: 350%; margin-left: -4%;">Hello, I'm Dyanesh</p>
+      <br />
+      <img src="images/dwight.jpg" />
+      <br />
+      <br />
+      <p style="font-size: 150%; margin-left: -3%;">Student @ <a href="http://amrita.edu" target="_blank">Amrita Vishwa Vidyapeetham</a>
+      </p>
+      <p style="font-size: 150%;">B.Tech CSE (Cybersecurity)</p>
+      <br />
+      <p style="margin-left: -5%;">
+        <a href="https://www.facebook.com/dyanesh.dyanesh.98" target="_blank">
+          <img class="icons" src="images/facebook.png" />
+        </a>
+        <a href="https://www.instagram.com/dyanesh15" target="_blank">
+          <img class="icons" src="images/instagram.png" />
+        </a>
+        <a href=""></a>
+        <img class="icons" src="images/twitter.png" />
+        <a href="https://www.linkedin.com/in/dyanesh003/" target="_blank">
+          <img class="icons" src="images/linkedin.png" />
+        </a>
+        <a href="https://github.com/dyanesh003" target="_blank">
+          <img class="icons" src="images/github-sign.png" />
+        </a>
+      </p>
+    </div>
+    <div class="adjust2">
+      <p style="font-family:'Josefin Sans', sans-serif;font-size: 350%;font-weight: 200%;">Welcome to my website.</p>
+      <br>
+      <br>
+      <p>This is a website about me by me. I'm Dyanesh, a reverse engineer, competitive programmer and CTF player.</p>
+      <br>
+      <br>
+      <br>
+      <p style="text-align:center;margin-left: -5%;">Scroll down to know more about me</p>
+      <br>
+      <br>
+      <img style="margin-left:35%;" width="20%" src="images/scroll.png">
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="about_div" id="about">
+      <p style="text-align: center; font-family:'Josefin Sans',san-serif; font-size:250%; letter-spacing: 2px;">
+        <strong>About</strong>
+      </p>
+      <br>
+      <p>I'm Dyanesh, a sophomore pursuing my B.Tech in CSE with specialization in Cybersecurity at Amrita Vishwa Vidyapeetham, Coimbatore. I'm from Chennai and I did my schooling in Arsha Vidya Mandir. <br> I'm interested in reverse engineering, malware analysis, competitive programming and CTFs. <br> My hobbies include watching movies and web series, listening to music, badminton and learning new technologies. <br>
+        <br> I'm a 3 star coder in codechef and have a rating of 1019 in codeforces. Below are the links to my profiles.
+      <ul style="margin-left: 3%;">
+        <li>
+          <a href="https://www.codechef.com/users/dyanesh003" target="_blank">dyanesh003 @Codechef</a>
+        </li>
+        <li>
+          <a href="https://codeforces.com/profile/pris0ner" target="_blank">pris0ner @Codeforces</a>
+        </li>
+      </ul>
+      <br> I'm also actively playing CTFs (Capture the Flag) which are contest where the problems are related to cybersecurity. I play for <a href="https://twitter.com/teambi0s" target="_blank">@teambi0s</a> and I mostly solve reversing and pwning challs in CTFs. <br>
+      <br> I'm skilled at using the following tools/technologies: <br>
+      <ul style="margin-left: 3%;">
+        <li>Python</li>
+        <li>C/C++</li>
+        <li>Java</li>
+        <li>Bash</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Linux</li>
+      </ul>
+      </p>
+      <br>
+      <br>
+      <div class="footer">
+        <p style="color: #fff;margin-bottom:-10%;">© Copyright Dyanesh</p>
+      </div>
+    </div>
+  </body>
+</html>
