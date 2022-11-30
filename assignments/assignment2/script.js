@@ -28,6 +28,35 @@ function NameCheck() {
             break
         }
     }
-
-
 }
+
+function fileValidation() {
+    var fileInput =
+        document.getElementById('myfile');
+     
+    var filePath = fileInput.value;
+    var allowedExtensions =
+            /(\.jpg|\.jpeg|\.png|\.svg)$/i;
+     
+    if (!allowedExtensions.exec(filePath)) {
+        alert('Invalid file type');
+        fileInput.value = '';
+        return false;
+    }
+    else
+    { 
+        if (fileInput.files && fileInput.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                document.getElementById(
+                    'imagePreview').innerHTML =
+                    '<img src="' + e.target.result
+                    + '"/>';
+            };
+             
+            reader.readAsDataURL(fileInput.files[0]);
+        }
+    }
+}
+
+
