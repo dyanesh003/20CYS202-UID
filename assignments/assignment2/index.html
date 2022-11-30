@@ -67,18 +67,22 @@
                 <label for="tel">Phone</label>
                 <input type="tel" name="phone" class="form-control" id="tel" onchange="PhoneNumberCheck()" placeholder="Enter Your Contact Number" required>
             </div>
-
+            <div class="col-sm-6 form-group">
+                <label id="upload-label">Identity:<p style="font-size: 80%;">(upload a clear picture of your id card)</p></label>
+                <input type="file" id="myfile" name="myfile" class="form" onchange="fileValidation()">
+            </div>
             <div class="col-sm-6 form-group">
                 <p style="color: black;font-size: 140%;">Are you a student of Amrita Vishwa Vidyapeetham University ?</p>
-                <label class="radio-inline" style="font-family:Consolas;font-size:20px;">
-                <input type="radio" name="optradio" style="height:20px; width:20px;"> YES
+                <label class="radio-inline" style="font-family:Consolas;font-size:18px;">
+                <input type="radio" name="optradio"> YES
                 <br><br>
-                <input type="radio" name="optradio" style="height:20px; width:20px;"> NO
+                <input type="radio" name="optradio"> NO
                 </label>
             </div>
 
-            <br><br>
-
+            <p style="font-size: 150%; color: black;">Any suggestions?</p>
+            <textarea rows="5" cols="100" id="comments" name="comment" placeholder="Enter your suggestions here..."></textarea>
+            <br><br><br>
             <div class="col-sm-6">
                 <input type="checkbox" class="form-check" id="chb" required>
                 <label for="chb" style="font-size: 150%;">&nbsp;I accept all the terms and conditions</label>
@@ -89,7 +93,7 @@
                <button class="btn">Submit Form</button>
                <br><br><br>
             </div>
-
+            
         </div>
         </div>
         </form>
